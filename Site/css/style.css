@@ -506,8 +506,8 @@ body {
 }
 
 .picture {
-width: 433px;
-height: 338px;
+  width: 433px;
+  height: 338px;
 
 }
 .nameCoffee {
@@ -525,14 +525,38 @@ height: 338px;
 /*           CONTACT            */
 /* ---------------------------- */
 
-.map_N_parking {
+.contactPage {
+  display: flex;
+  flex-direction: row;
+  color: #FFF6D9;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  justify-content: space-between;
+  line-height: auto;
+}
+
+#map_N_parking {
   display:flex;
   flex-direction: column;
 }
 
-.info_N_signup {
+#info_N_signup {
   display:flex;
   flex-direction: column;
+  justify-content: space-around;
+  
+  
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.fa-solid {
+  color: #c7b07b;
 }
 
 /* ------------- */
