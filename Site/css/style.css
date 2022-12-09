@@ -189,6 +189,7 @@ body {
     rgba(26, 13, 7, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
+  background-size: cover;
 }
 
 .home {
