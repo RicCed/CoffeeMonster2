@@ -15,8 +15,35 @@
     <title>Document</title>
   </head>
   <body>
+    <header class="h_theBox">
+      <div class="h_line">
+        <ul class="h_navigation">
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+          <li>
+            <a class="h_menu" href="#">Menu</a>
+          </li>
+          <li>
+            <a class="h_ourCoffee" href="#">Our Coffee</a>
+          </li>
+          <li>
+            <a class="h_logo" href="#">LOGO</a>
+          </li>
+          <li>
+            <a class="h_news" href="#">News</a>
+          </li>
+          <li>
+            <a class="h_ourStory" href="#">Our Story</a>
+          </li>
+          <li>
+            <a class="h_contact" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <div class="container">
-      <div class="menu-default">
+      <div class="menu-default" id="default">
         <h1 class="menu">Menu</h1>
         <div class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Hot coffees</h2>
@@ -24,7 +51,7 @@
             <img src="images/coffee-item-edited.jpg" alt="Americanos picture" />
             <p>Americanos</p>
           </div>
-          <div class="menu-coffee">
+          <div class="menu-coffee" onclick="brewedcoffee()">
             <img
               src="images/coffee-item-edited.jpg"
               alt="Brewed Coffees picture"
@@ -84,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="menu-brewed-coffee">
+      <div class="menu-brewed-coffee hidden" id="brewed">
         <div class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Brewed Coffees</h2>
           <div class="menu-coffee">
@@ -112,15 +139,15 @@
           </div>
         </div>
       </div>
-      <div class="go-back">
+      <div class="go-back hidden" id="go-back" onclick="goback()">
         <img src="images/arrow-down.svg" alt="svg pijl naar links" />
         <p>go back</p>
       </div>
-      <div class="scroll-down">
+      <div class="scroll-down hidden" id="scroll-down">
         <img src="images/arrow-down.svg" alt="svg pijl naar beneden" />
         <p>scroll down for snacks</p>
       </div>
-      <div class="flex flex-wrap personalisation">
+      <div class="flex flex-wrap personalisation hidden">
         <h1 class="personalize">Personalize your coffee</h1>
         <div class="menu-personalize">
           <div class="personalize-cup">
@@ -143,23 +170,23 @@
           <p>Toppings</p>
           <p>Milk</p>
         </div>
-        <div class="extra-choices">
+        <div class="visible">
           <div class="flavours">
             <p>Caramel Syrup</p>
             <p>Hazelnut Syrup</p>
             <p>Vanille Syrup</p>
           </div>
-          <div class="sweeteners">
+          <div class="hidden">
             <p>Sugar</p>
             <p>Honey</p>
             <p>Stevia</p>
           </div>
-          <div class="toppings">
+          <div class="hidden">
             <p>Chestnut Praline</p>
             <p>Pumpkin Spice</p>
             <p>Cinnamon Sprinkles</p>
           </div>
-          <div class="milk">
+          <div class="hidden">
             <p>Almond</p>
             <p>Soy</p>
             <p>Coconut Milk</p>
@@ -218,5 +245,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
