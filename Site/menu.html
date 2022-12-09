@@ -126,7 +126,7 @@
             <img src="images/coffee-item-edited.jpg" alt="Veranda" />
             <p>Veranda</p>
           </div>
-          <div class="menu-coffee">
+          <div class="menu-coffee" id="robusta" onclick="personalize()">
             <img src="images/coffee-item-edited.jpg" alt="Robusta" />
             <p>Robusta</p>
           </div>
@@ -147,7 +147,7 @@
         <img src="images/arrow-down.svg" alt="svg pijl naar beneden" />
         <p>scroll down for snacks</p>
       </div>
-      <div class="flex flex-wrap personalisation hidden">
+      <div class="flex flex-wrap personalisation hidden" id="personalize">
         <h1 class="personalize">Personalize your coffee</h1>
         <div class="menu-personalize">
           <div class="personalize-cup">
@@ -155,11 +155,13 @@
             <h3>Robusta</h3>
             <div>
               <div class="flex mug-size">
-                <p class="size-active">S</p>
-                <p>M</p>
-                <p>L</p>
+                <p class="size-active" id="small" onclick="size()">S</p>
+                <p id="medium" onclick="size()">M</p>
+                <p id="large" onclick="size()">L</p>
               </div>
-              <p class="coffee-monster">Coffee Monster</p>
+              <p class="coffee-monster" id="coffee-monster" onclick="size()">
+                Coffee Monster
+              </p>
             </div>
           </div>
         </div>
