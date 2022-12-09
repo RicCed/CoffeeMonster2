@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+
+body {
+  background: url(../images/Coffie-background-edited.png),
+    radial-gradient(
+      circle,
+      rgba(0, 28, 36, 1) 10.95%,
+      rgba(0, 0, 0, 1) 42.65%,
+      rgba(4, 0, 0, 1) 76.19%,
+      rgba(26, 13, 7, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  background-size: cover;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+.menu {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 93px;
+
+  color: #fff6d9;
+  margin-top: 113px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.menu-coffees p {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+
+  color: #fff6d9;
+}
+
+.menu-coffee {
+  margin-right: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.menu-coffee img {
+  width: 151px;
+  height: 151px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid #9e9c9c;
+}
+
+.menu-coffee p {
+  text-align: center;
+}
+
+.menu-subtitle {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+
+  color: #fff6d9;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #c7b07b;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
+
+footer div {
+  width: 50%;
+}
+
+footer {
+  background-color: #040607;
+  color: #c7b07b;
+  border-top: 1px solid #c7b07b;
+}
+
+footer h2 {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+
+  color: #c7b07b;
+}
+
+footer label {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1em;
+  margin-top: 24px;
+}
+
+.right {
+  margin-right: 62px;
+}
+
+footer p {
+  display: inline;
+}
+
+footer input,
+footer textarea {
+  background: #c7bfae;
+  margin-bottom: 36px;
+  font-family: "Libre Bodoni";
+  font-size: 1.05em;
+}
+
+footer input:not(.submit) {
+  height: 32px;
+}
+
+.formfield * {
+  vertical-align: top;
+}
+
+.p-email {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.left-email {
+  margin-bottom: 27px;
+  width: 504px;
+}
+
+.right input:not(.submit) {
+  width: 337px;
+}
+
+.footer-social {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.footer-social a {
+  margin-right: 45px;
+}
+
+.submit {
+  cursor: pointer;
+  display: block;
+  padding: 1em;
+}
+
+.footer-social i {
+  font-size: 3em;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #c7b07b;
+}
+
+.hidden {
+  display: hidden;
+}
+
+.menu-coffee .monster-coffee {
+  font-family: "Just Me Again Down Here";
+  font-size: 40px;
+  margin-top: 0.625em;
+}
+
+.go-back {
+  font-family: "Waiting for the Sunrise";
+  color: white;
+  left: 25px;
+  bottom: 2em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.go-back p {
+  display: inline;
+  position: fixed;
+  bottom: 0.5em;
+  left: 4em;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.go-back img {
+  rotate: 95deg;
+  height: 10em;
+  position: fixed;
+  bottom: -1em;
+  left: -1em;
+  cursor: pointer;
+}
+
+.scroll-down {
+  font-family: "Waiting for the Sunrise";
+  color: white;
+  font-size: 1em;
+}
+
+.scroll-down p {
+  display: inline;
+  position: fixed;
+  bottom: 0.5em;
+  right: 4em;
+  font-size: 1.75em;
+  z-index: -1;
+}
+
+.scroll-down img {
+  rotate: 5deg;
+  height: 10em;
+  position: fixed;
+  bottom: -1em;
+  right: -1em;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.personalize {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 93px;
+
+  color: #fff6d9;
+  margin-top: 113px;
+}
+
+.personalize-cup img {
+  filter: brightness(1000%);
+}
+
+.personalize-cup {
+  color: #fff6d9;
+}
+
+.mug-size p {
+  margin-right: 1em;
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+
+  color: #fff6d9;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 21px;
+}
+
+.personalize-cup .size-active {
+  color: #c7b07b;
+}
+
+.mug-size p:hover,
+.coffee-monster:hover {
+  color: #c7b07b;
+}
+
+.mug-size p::after {
+  content: "|";
+  margin-left: 1em;
+}
+
+.mug-size p:last-child:after {
+  content: "";
+}
+
+.personalize-cup h3 {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height */
+  margin-left: 6em;
+  width: 100%;
+}
+
+.coffee-monster {
+  font-family: "Just Me Again Down Here";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 37px;
+  /* identical to box height, or 92% */
+
+  color: #fff6d9;
+  margin-left: 1.25em;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.mug-size {
+  margin-left: 5em;
+  margin-bottom: 0;
+}
+
+.extras h2 {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+
+  color: #fff6d9;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #c7b07b;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  margin-right: 10em;
+}
+
+.extras {
+  margin-left: 119px;
+}
+
+.extras p {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #fff6d9;
+  cursor: pointer;
+}
+
+.extra-choices {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: #fff6d9;
+  background: rgba(82, 60, 45, 0.31);
+  position: absolute;
+  right: -9.8em;
+  top: 11.7em;
+  height: 470px;
+}
+
+.extra-choices p {
+  margin-right: 179px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.personalisation {
+  position: relative;
+}
+
+.sweeteners,
+.toppings,
+.milk {
+  display: none;
+}
+
+.drawing {
+  background-image: url(../images/drawing-larger.svg);
+  background-repeat: no-repeat;
+  background-size: 3em;
+}
