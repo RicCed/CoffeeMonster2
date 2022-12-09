@@ -3,6 +3,177 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/* ---------------------------- */
+/*             NAV              */
+/* ---------------------------- */
+
+.h_theBox {
+  width: 100%;
+  height: 137px;
+}
+
+.h_line {
+  background: rgba(22, 16, 13, 0.49);
+  box-shadow: 0px 0px 30px rgba(234, 224, 224, 0.24);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);  /* Safari 9+ */
+}
+
+.h_navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-transform: uppercase;
+  align-content: center;
+  font-family: 'Libre Bodoni';
+  font-size: 25px;
+  line-height: 31px;
+  line-height: 39px;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 2px 20px #EAE0E0;
+  color: #FFF6D9;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+header div ul li .active {
+  border-bottom: 3px solid #C7B07B;
+}
+
+.h_navigation a:hover {
+  width: 88px;
+  height: 0px;
+  border-bottom: 3px solid #C7B07B;
+  position: relative;
+  color: #C7B07B; 
+
+}
+
+
+
+.h_navigation a {
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: #FFF6D9;
+  padding-bottom: 1px;
+}
+
+/* ---------------------------- */
+/*            HOME              */
+/* ---------------------------- */
+
+.homePage {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 85vh;
+  width: 50%;
+  min-width: 700px;
+  color: #FFF6D9;
+  margin-left: 85px; 
+  font-style: normal;
+  font-weight: 400;
+  background-position: right center;
+} 
+
+.title_N_quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Julius Sans One";
+  font-size: 69px;
+  line-height: 93px;
+}
+
+.quote {
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  line-height: auto;
+}
+
+.signup {
+  font-family: "Libre Bodoni";
+  font-size: 70px;
+  color: #493628;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+  
+}
+
+.newsBox {
+  background: rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 20px rgba(9, 9, 9, 0.25);
+  white-space: pre;
+  padding-left: 25px;
+  width: 307px
+}
+
+.newsNews {
+  width: 93px;
+  font-family: "Julius Sans One";
+  font-size: 32px;
+  border-bottom: 3px solid #C7B07B;
+  padding: 1px;
+}
+
+.newsTitle {
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.click-here {
+    font-family: "Waiting for the Sunrise";
+    color: white;
+    left: 18em;
+    bottom:9em;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+    font-size: 1.75em;
+    cursor: pointer;
+  } 
+  
+.click-here img {
+  rotate: 75deg;
+  height: 6em;
+  position: absolute;
+  bottom: -3em;
+  left: -5em;
+  cursor: pointer;      
+}
+
+      /* ------------- */
+      /*   OUR STORY   */
+      /* ------------- */
+
+.ourStory {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* ---------------------------------- */
+
 body {
   background: url(../images/Coffie-background-edited.png),
     radial-gradient(
