@@ -159,18 +159,45 @@ header div ul li .active {
   cursor: pointer;      
 }
 
-      /* ------------- */
-      /*   OUR COFFEE  */
-      /* ------------- */
+/* ---------------------------- */
+/*        OUR COFFEE            */
+/* ---------------------------- */
 
 .ourStory {
   display: flex;
   flex-direction: column;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  line-height: auto;
+  color: #FFF6D9;
 }
 
-.section {
+.section1 {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #c7b07b;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #c7b07b;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  justify-content: space-between;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+
+.picture {
+width: 433px;
+height: 338px;
 }
 
 
