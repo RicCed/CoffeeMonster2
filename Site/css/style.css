@@ -603,12 +603,34 @@ span h2 {
   font-size: 28px;
   margin: 30px 0 30px 0;
 
-
-
 }
 
 .fa-solid {
   color: #c7b07b;
+}
+
+/* ----------------- */
+/*    MEMBER FORM    */
+/* ----------------- */
+.memberPage {
+  display: flex;
+  flex-direction: row;
+  color: #FFF6D9;
+
+}
+
+.m_img img {
+  height: 735px;
+  width: 621px;
+  margin: 78px 130px 120px 0;
+  border: 1px solid #9e9c9c;
+  border-radius: 15px;
+
+}
+
+form {
+  display:flex;
+  flex-direction: column;
 }
 
 /* ------------- */
