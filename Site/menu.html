@@ -153,18 +153,18 @@
         <h1 class="personalize">Personalize your coffee</h1>
         <div class="menu-personalize">
           <div class="personalize-cup">
-            <img src="images/cups/Cups_Medium - None.svg" alt="Big mug" />
+            <img id="cup" src="images/cups/Cups_Medium - None.svg" alt="Big mug" />
             <h3>Robusta</h3>
             <div>
               <div class="flex mug-size">
-                <p id="small" onclick="smallsize()">S</p>
-                <p id="medium" class="size-active" onclick="mediumsize()">M</p>
-                <p id="large" onclick="largesize()">L</p>
+                <p id="small" onclick="size('small')">S</p>
+                <p id="medium" class="size-active" onclick="size('medium')">M</p>
+                <p id="large" onclick="size('large')">L</p>
               </div>
               <p
                 class="coffee-monster"
                 id="coffee-monster"
-                onclick="monstersize()"
+                onclick="size('coffee-monster')"
               >
                 Coffee Monster
               </p>
@@ -180,9 +180,9 @@
         </div>
         <div class="hidden extra-choices" id="menu-choice">
           <div class="hidden" id="flavour-choice">
-            <p>Caramel Syrup</p>
-            <p>Hazelnut Syrup</p>
-            <p>Vanille Syrup</p>
+            <p onclick="flavour('caramel')" id="caramel">Caramel Syrup</p>
+            <p onclick="flavour('hazelnut')" id="hazelnut">Hazelnut Syrup</p>
+            <p onclick="flavour('vanilla')" id="vanilla">Vanille Syrup</p>
           </div>
           <div class="hidden" id="sweetener-choice">
             <p>Sugar</p>

@@ -1,5 +1,5 @@
-/ ------------- / / MENU / / ------------- /;
 "use strict"
+let count = 0;
 
 function brewedcoffee() {
   if (document.getElementById("brewed").classList.contains("hidden")) {
@@ -41,65 +41,28 @@ function personalize() {
   }
 }
 
-function smallsize() {
-  document.getElementById("small").classList.add("size-active");
-  if (document.getElementById("medium").classList.contains("size-active")) {
-    document.getElementById("medium").classList.remove("size-active");
-  }
-  if (document.getElementById("large").classList.contains("size-active")) {
+function size(id) {
+  document.getElementById(id).classList.add("size-active");
+  if (id == "small") {
+    document.getElementById('cup').src="images/cups/Cups_Small - None.svg";
+    document.getElementById('medium').classList.remove("size-active");
     document.getElementById("large").classList.remove("size-active");
-  }
-  if (
-    document.getElementById("coffee-monster").classList.contains("size-active")
-  ) {
     document.getElementById("coffee-monster").classList.remove("size-active");
-  }
-}
-
-function mediumsize() {
-  document.getElementById("medium").classList.add("size-active");
-  if (document.getElementById("small").classList.contains("size-active")) {
+  } if (id == "medium") {
+    document.getElementById('small').classList.remove("size-active");
+    document.getElementById("large").classList.remove("size-active");
+    document.getElementById("coffee-monster").classList.remove("size-active");
+  } if (id == "large") {
+    document.getElementById('medium').classList.remove("size-active");
     document.getElementById("small").classList.remove("size-active");
-  } else if (
-    document.getElementById("large").classList.contains("size-active")
-  ) {
-    document.getElementById("large").classList.remove("size-active");
-  } else if (
-    document.getElementById("coffee-monster").classList.contains("size-active")
-  ) {
     document.getElementById("coffee-monster").classList.remove("size-active");
-  }
-}
-
-function largesize() {
-  document.getElementById("large").classList.add("size-active");
-  if (document.getElementById("medium").classList.contains("size-active")) {
-    document.getElementById("medium").classList.remove("size-active");
-  } else if (
-    document.getElementById("small").classList.contains("size-active")
-  ) {
-    document.getElementById("small").classList.remove("size-active");
-  } else if (
-    document.getElementById("coffee-monster").classList.contains("size-active")
-  ) {
-    document.getElementById("coffee-monster").classList.remove("size-active");
-  }
-}
-
-function monstersize() {
-  document.getElementById("coffee-monster").classList.add("size-active");
-  if (document.getElementById("medium").classList.contains("size-active")) {
-    document.getElementById("medium").classList.remove("size-active");
-  } else if (
-    document.getElementById("large").classList.contains("size-active")
-  ) {
+  } if (id == "coffee-monster") {
+    document.getElementById('medium').classList.remove("size-active");
     document.getElementById("large").classList.remove("size-active");
-  } else if (
-    document.getElementById("small").classList.contains("size-active")
-  ) {
     document.getElementById("small").classList.remove("size-active");
   }
 }
+
 
 function flavourextra() {
   document.getElementById("flavours").classList.add("drawing");
@@ -222,3 +185,38 @@ function readmore2(){
   tekst2.innerHTML += "You should avoid this habit as it could damage your stomach lining, cause indigestion and heartburn if drank on an empty stomach.<br> So, to enjoy this drink in the morning we recommend having your caffeine fix with a hearty breakfast.</p>";
   document.getElementById("readmore2").classList.add("hidden");
 }
+
+function flavour(id) {
+  if(!document.getElementById(id).classList.contains("drawing")) {
+  document.getElementById(id).classList.add("drawing");
+  count++;
+  cup(count);
+  } else {
+  document.getElementById(id).classList.remove("drawing");
+  count--;
+  cup(count);
+  }
+}
+
+function cup(_number) {
+  if(_number == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - None.svg";
+  } else if(_number == 1) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 1.svg";
+  } else if(_number == 2) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 2.svg";
+  } else if(_number == 3) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 3.svg"
+  } else if(_number == 4) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 4.svg";
+  } else if(_number == 5) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 5.svg";
+  } else {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 6.svg";
+  }
+}
+
+
+
+
+
