@@ -197,6 +197,57 @@ function cup(_number) {
     document.getElementById('cup').src="images/cups/Cups_Small - 6.svg";
     }
   }
+  if (document.getElementById("medium").classList.contains("size-active")) {
+    if (_number == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - None.svg";
+  } else if(_number == 1) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 1.svg";
+  } else if(_number == 2) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 2.svg";
+  } else if(_number == 3) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 3.svg"
+  } else if(_number == 4) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 4.svg";
+  } else if(_number == 5) {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 5.svg";
+  } else {
+    document.getElementById('cup').src="images/cups/Cups_Medium - 6.svg";
+    }
+  }
+  if (document.getElementById("large").classList.contains("size-active")) {
+    if (_number == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Large - None.svg";
+  } else if(_number == 1) {
+    document.getElementById('cup').src="images/cups/Cups_Large - 1.svg";
+  } else if(_number == 2) {
+    document.getElementById('cup').src="images/cups/Cups_Large - 2.svg";
+  } else if(_number == 3) {
+    document.getElementById('cup').src="images/cups/Cups_Large - 3.svg"
+  } else if(_number == 4) {
+    document.getElementById('cup').src="images/cups/Cups_Large - 4.svg";
+  } else if(_number == 5) {
+    document.getElementById('cup').src="images/cups/Cups_Large - 5.svg";
+  } else {
+    document.getElementById('cup').src="images/cups/Cups_Large - 6.svg";
+    }
+  }
+  if (document.getElementById("coffee-monster").classList.contains("size-active")) {
+    if (_number == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - None.svg";
+  } else if(_number == 1) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 1.svg";
+  } else if(_number == 2) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 2.svg";
+  } else if(_number == 3) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 3.svg"
+  } else if(_number == 4) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 4.svg";
+  } else if(_number == 5) {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 5.svg";
+  } else {
+    document.getElementById('cup').src="images/cups/Cups_Monster - 6.svg";
+    }
+  }
 }
 
 function size(id) {
@@ -221,18 +272,61 @@ function size(id) {
     document.getElementById('medium').classList.remove("size-active");
     document.getElementById("large").classList.remove("size-active");
     document.getElementById("coffee-monster").classList.remove("size-active");
-  } if (id == "medium") {
+  } 
+  if (id == "medium") {
+    if (array.length == 0) {
     document.getElementById('cup').src="images/cups/Cups_Medium - None.svg";
+    } else if (array.length == 1) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 1.svg";
+    } else if (array.length == 2) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 2.svg";
+    } else if (array.length == 3) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 3.svg";
+    } else if (array.length == 4) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 4.svg";
+    } else if (array.length == 5) {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 5.svg";
+    } else {
+      document.getElementById('cup').src="images/cups/Cups_Medium - 6.svg";
+    }
     document.getElementById('small').classList.remove("size-active");
     document.getElementById("large").classList.remove("size-active");
     document.getElementById("coffee-monster").classList.remove("size-active");
   } if (id == "large") {
+    if (array.length == 0) {
     document.getElementById('cup').src="images/cups/Cups_Large - None.svg";
+    } else if (array.length == 1) {
+      document.getElementById('cup').src="images/cups/Cups_Large - 1.svg";
+    } else if (array.length == 2) {
+      document.getElementById('cup').src="images/cups/Cups_Large - 2.svg";
+    } else if (array.length == 3) {
+      document.getElementById('cup').src="images/cups/Cups_Large - 3.svg";
+    } else if (array.length == 4) {
+      document.getElementById('cup').src="images/cups/Cups_Large - 4.svg";
+    } else if (array.length == 5) {
+      document.getElementById('cup').src="images/cups/Cups_Large - 5.svg";
+    } else {
+      document.getElementById('cup').src="images/cups/Cups_Large - 6.svg";
+    }
     document.getElementById('medium').classList.remove("size-active");
     document.getElementById("small").classList.remove("size-active");
     document.getElementById("coffee-monster").classList.remove("size-active");
   } if (id == "coffee-monster") {
+    if (array.length == 0) {
     document.getElementById('cup').src="images/cups/Cups_Monster - None.svg";
+    } else if (array.length == 1) {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 1.svg";
+    } else if (array.length == 2) {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 2.svg";
+    } else if (array.length == 3) {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 3.svg";
+    } else if (array.length == 4) {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 4.svg";
+    } else if (array.length == 5) {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 5.svg";
+    } else {
+      document.getElementById('cup').src="images/cups/Cups_Monster - 6.svg";
+    }
     document.getElementById('medium').classList.remove("size-active");
     document.getElementById("large").classList.remove("size-active");
     document.getElementById("small").classList.remove("size-active");
