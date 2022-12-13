@@ -80,7 +80,7 @@ header div ul li .active {
   width: 50%;
   min-width: 700px;
   color: #fff6d9;
-  margin-left: 85px;
+  margin-left: 35px;
   font-style: normal;
   font-weight: 400;
   background-position: right center;
@@ -139,8 +139,8 @@ header div ul li .active {
 .click-here {
   font-family: "Waiting for the Sunrise";
   color: white;
-  left: 27em;
-  bottom: 9em;
+  left: 26em;
+  bottom: 8em;
   font-size: 1em;
   display: inline;
   position: absolute;
@@ -273,7 +273,7 @@ body {
 
 .go-back p {
   display: inline;
-  position: fixed;
+  position: absolute;
   bottom: 1.5em;
   left: 3.5em;
   font-size: 1.75em;
@@ -283,7 +283,7 @@ body {
 .go-back img {
   rotate: 95deg;
   height: 10em;
-  position: fixed;
+  position: absolute;
   bottom: -1em;
   left: -1em;
   cursor: pointer;
