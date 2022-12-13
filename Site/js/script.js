@@ -1,5 +1,6 @@
 "use strict"
 let count = 0;
+let array = [];
 
 function brewedcoffee() {
   if (document.getElementById("brewed").classList.contains("hidden")) {
@@ -38,28 +39,6 @@ function personalize() {
     document.getElementById("personalize").classList.remove("hidden");
     document.getElementById("brewed").classList.remove("visible");
     document.getElementById("brewed").classList.add("hidden");
-  }
-}
-
-function size(id) {
-  document.getElementById(id).classList.add("size-active");
-  if (id == "small") {
-    document.getElementById('cup').src="images/cups/Cups_Small - None.svg";
-    document.getElementById('medium').classList.remove("size-active");
-    document.getElementById("large").classList.remove("size-active");
-    document.getElementById("coffee-monster").classList.remove("size-active");
-  } if (id == "medium") {
-    document.getElementById('small').classList.remove("size-active");
-    document.getElementById("large").classList.remove("size-active");
-    document.getElementById("coffee-monster").classList.remove("size-active");
-  } if (id == "large") {
-    document.getElementById('medium').classList.remove("size-active");
-    document.getElementById("small").classList.remove("size-active");
-    document.getElementById("coffee-monster").classList.remove("size-active");
-  } if (id == "coffee-monster") {
-    document.getElementById('medium').classList.remove("size-active");
-    document.getElementById("large").classList.remove("size-active");
-    document.getElementById("small").classList.remove("size-active");
   }
 }
 
@@ -189,32 +168,78 @@ function readmore2(){
 function flavour(id) {
   if(!document.getElementById(id).classList.contains("drawing")) {
   document.getElementById(id).classList.add("drawing");
+  array[count] = id;
   count++;
   cup(count);
   } else {
   document.getElementById(id).classList.remove("drawing");
+  array.pop();
   count--;
   cup(count);
   }
 }
 
 function cup(_number) {
-  if(_number == 0) {
-    document.getElementById('cup').src="images/cups/Cups_Medium - None.svg";
+  if (document.getElementById("small").classList.contains("size-active")) {
+    if (_number == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Small - None.svg";
   } else if(_number == 1) {
-    document.getElementById('cup').src="images/cups/Cups_Medium - 1.svg";
+    document.getElementById('cup').src="images/cups/Cups_Small - 1.svg";
   } else if(_number == 2) {
-    document.getElementById('cup').src="images/cups/Cups_Medium - 2.svg";
+    document.getElementById('cup').src="images/cups/Cups_Small - 2.svg";
   } else if(_number == 3) {
-      document.getElementById('cup').src="images/cups/Cups_Medium - 3.svg"
+    document.getElementById('cup').src="images/cups/Cups_Small - 3.svg"
   } else if(_number == 4) {
-      document.getElementById('cup').src="images/cups/Cups_Medium - 4.svg";
+    document.getElementById('cup').src="images/cups/Cups_Small - 4.svg";
   } else if(_number == 5) {
-      document.getElementById('cup').src="images/cups/Cups_Medium - 5.svg";
+    document.getElementById('cup').src="images/cups/Cups_Small - 5.svg";
   } else {
-      document.getElementById('cup').src="images/cups/Cups_Medium - 6.svg";
+    document.getElementById('cup').src="images/cups/Cups_Small - 6.svg";
+    }
   }
 }
+
+function size(id) {
+  console.log(array.length);
+  document.getElementById(id).classList.add("size-active");
+  if (id == "small") {
+    if (array.length == 0) {
+    document.getElementById('cup').src="images/cups/Cups_Small - None.svg";
+    } else if (array.length == 1) {
+      document.getElementById('cup').src="images/cups/Cups_Small - 1.svg";
+    } else if (array.length == 2) {
+      document.getElementById('cup').src="images/cups/Cups_Small - 2.svg";
+    } else if (array.length == 3) {
+      document.getElementById('cup').src="images/cups/Cups_Small - 3.svg";
+    } else if (array.length == 4) {
+      document.getElementById('cup').src="images/cups/Cups_Small - 4.svg";
+    } else if (array.length == 5) {
+      document.getElementById('cup').src="images/cups/Cups_Small - 5.svg";
+    } else {
+      document.getElementById('cup').src="images/cups/Cups_Small - 6.svg";
+    }
+    document.getElementById('medium').classList.remove("size-active");
+    document.getElementById("large").classList.remove("size-active");
+    document.getElementById("coffee-monster").classList.remove("size-active");
+  } if (id == "medium") {
+    document.getElementById('cup').src="images/cups/Cups_Medium - None.svg";
+    document.getElementById('small').classList.remove("size-active");
+    document.getElementById("large").classList.remove("size-active");
+    document.getElementById("coffee-monster").classList.remove("size-active");
+  } if (id == "large") {
+    document.getElementById('cup').src="images/cups/Cups_Large - None.svg";
+    document.getElementById('medium').classList.remove("size-active");
+    document.getElementById("small").classList.remove("size-active");
+    document.getElementById("coffee-monster").classList.remove("size-active");
+  } if (id == "coffee-monster") {
+    document.getElementById('cup').src="images/cups/Cups_Monster - None.svg";
+    document.getElementById('medium').classList.remove("size-active");
+    document.getElementById("large").classList.remove("size-active");
+    document.getElementById("small").classList.remove("size-active");
+  }
+}
+
+
 
 
 
