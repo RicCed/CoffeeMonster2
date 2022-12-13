@@ -16,32 +16,34 @@
   </head>
   <body>
     <header class="h_theBox">
-      <div class="h_line">
-        <ul class="h_navigation">
-          <li>
-            <a class="active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="h_menu" href="#">Menu</a>
-          </li>
-          <li>
-            <a class="h_ourCoffee" href="#">Our Coffee</a>
-          </li>
-          <li>
-            <a class="h_logo" href="#">LOGO</a>
-          </li>
-          <li>
-            <a class="h_news" href="#">News</a>
-          </li>
-          <li>
-            <a class="h_ourStory" href="#">Our Story</a>
-          </li>
-          <li>
-            <a class="h_contact" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+        <div class="h_line">
+            <div class="container">
+                <ul class="h_navigation">
+                    <li>
+                    <a class="h_home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a class="active" href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                    <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
+                    </li>
+                    <li>
+                        <a class="h_logo" href="#">LOGO</a>
+                    </li>
+                    <li>
+                        <a class="h_news" href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a class="h_ourStory" href="ourStory.html">Our Story</a>
+                    </li>
+                    <li>
+                        <a class="" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
     <div class="container">
       <div class="menu-default" id="default">
         <h1 class="menu">Menu</h1>
@@ -151,15 +153,19 @@
         <h1 class="personalize">Personalize your coffee</h1>
         <div class="menu-personalize">
           <div class="personalize-cup">
-            <img src="images/big-mug.png" alt="Big mug" />
+            <img src="images/cups/Cups_Medium - None.svg" alt="Big mug" />
             <h3>Robusta</h3>
             <div>
               <div class="flex mug-size">
-                <p class="size-active" id="small" onclick="size()">S</p>
-                <p id="medium" onclick="size()">M</p>
-                <p id="large" onclick="size()">L</p>
+                <p id="small" onclick="smallsize()">S</p>
+                <p id="medium" class="size-active" onclick="mediumsize()">M</p>
+                <p id="large" onclick="largesize()">L</p>
               </div>
-              <p class="coffee-monster" id="coffee-monster" onclick="size()">
+              <p
+                class="coffee-monster"
+                id="coffee-monster"
+                onclick="monstersize()"
+              >
                 Coffee Monster
               </p>
             </div>
@@ -167,28 +173,28 @@
         </div>
         <div class="extras">
           <h2>Extras:</h2>
-          <p class="drawing">Flavours</p>
-          <p>Sweeteners</p>
-          <p>Toppings</p>
-          <p>Milk</p>
+          <p id="flavours" onclick="flavourextra()">Flavours</p>
+          <p id="sweeteners" onclick="sweetenerextra()">Sweeteners</p>
+          <p id="toppings" onclick="toppingextra()">Toppings</p>
+          <p id="milk" onclick="milkextra()">Milk</p>
         </div>
-        <div class="visible">
-          <div class="flavours">
+        <div class="hidden extra-choices" id="menu-choice">
+          <div class="hidden" id="flavour-choice">
             <p>Caramel Syrup</p>
             <p>Hazelnut Syrup</p>
             <p>Vanille Syrup</p>
           </div>
-          <div class="hidden">
+          <div class="hidden" id="sweetener-choice">
             <p>Sugar</p>
             <p>Honey</p>
             <p>Stevia</p>
           </div>
-          <div class="hidden">
+          <div class="hidden" id="topping-choice">
             <p>Chestnut Praline</p>
             <p>Pumpkin Spice</p>
             <p>Cinnamon Sprinkles</p>
           </div>
-          <div class="hidden">
+          <div class="hidden" id="milk-choice">
             <p>Almond</p>
             <p>Soy</p>
             <p>Coconut Milk</p>
