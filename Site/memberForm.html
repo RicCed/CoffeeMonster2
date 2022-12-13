@@ -20,29 +20,31 @@
      <!------->
     <header class="h_theBox">
         <div class="h_line">
-            <ul class="h_navigation">
-                <li>
-                <a class="active" href="#">Home</a>
-                </li>
-                <li>
-                <a class="h_menu" href="#">Menu</a>
-                </li>
-                <li>
-                <a class="h_ourCoffee" href="#">Our Coffee</a>
-                </li>
-                <li>
-                    <a class="h_logo" href="#">LOGO</a>
-                </li>
-                <li>
-                    <a class="h_news" href="#">News</a>
-                </li>
-                <li>
-                    <a class="h_ourStory" href="#">Our Story</a>
-                </li>
-                <li>
-                    <a class="h_contact" href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="h_navigation">
+                    <li>
+                    <a class="h_home" href="#">Home</a>
+                    </li>
+                    <li>
+                    <a class="h_menu" href="#">Menu</a>
+                    </li>
+                    <li>
+                    <a class="h_ourCoffee" href="#">Our Coffee</a>
+                    </li>
+                    <li>
+                        <a class="h_logo" href="#">LOGO</a>
+                    </li>
+                    <li>
+                        <a class="h_news" href="#">News</a>
+                    </li>
+                    <li>
+                        <a class="h_ourStory" href="#">Our Story</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header> 
      <!--------------->
@@ -55,21 +57,53 @@
                 <img src="../Site/images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" alt="cupsandplants">
             </div>
             <div class="memberForm">
-                <form class="contact-form" action="index.html" method="post">
-                    <label for="">Name<input type="text" name="contact-form-text"></label>
-                    <label for="">E-mail<input type="email" name="contact-form-text"></label>
-                    <label for="">Address<input type="text" name="contact-form-text"></label>
-                    <label for="">Phone number<input type="text" name="contact-form-text"></label>
-                    <label for="">Username<input type="text" name="contact-form-text"></label>
-                    <label for="">Password<input type="password" name="contact-form-text"></label>
-                    <label for="">IBAN number<input type="???" name="contact-form-text"></label>
-                    <label for="">Expire Date<input type="???" name="contact-form-text"></label>
-                    <label for="">CNC<input type="???" name="contact-form-text"></label>
-                    <input type="submit" name="submitButton" value="Send">
-                    </form>
+                <form class="m_form" action="" method="">
+                    <label for="">Name<input type="text" class="areatext" required></label>
+                    <label for="">E-mail<input type="email" class="areatext" required></label>
+                    <label for="">Address<input type="text" class="areatext" required></label>
+                    <label for="">Phone number<input type="text" class="areatext" required></label>
+                    <label for="">Username<input type="text" class="areatext" required></label>
+                    <label for="">Password<input type="password" class="areatext" required></label>&nbsp;&nbsp;
+                    <label for=""></label>Credit Card Number
+                        <div class="cardNo">
+                            <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required/>&nbsp;&nbsp;
+                            <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required/>&nbsp;&nbsp;
+                            <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard3" id="creditCard3" required/>&nbsp;&nbsp;
+                            <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required/></label>
+                            <br />
+                        </div>
+                        <div class="cardNo2">
+                            <label for="">Expiration Date
+                                <select class="areatext" name='expireMM' id='expireMM'>
+                                    <option value=''>Month</option>
+                                    <option value='01'>January</option>
+                                    <option value='02'>February</option>
+                                    <option value='03'>March</option>
+                                    <option value='04'>April</option>
+                                    <option value='05'>May</option>
+                                    <option value='06'>June</option>
+                                    <option value='07'>July</option>
+                                    <option value='08'>August</option>
+                                    <option value='09'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                </select>
+                                <select class="areatext" name='expireYY' id='expireYY'>
+                                    <option value=''>Year</option>
+                                    <option value='20'>2020</option>
+                                    <option value='21'>2021</option>
+                                    <option value='22'>2022</option>
+                                    <option value='23'>2023</option>
+                                    <option value='24'>2024</option>
+                                </select> 
+                                <input class="areatext" type="hidden" name="expiry" id="expiry" maxlength="4"/> </label>&nbsp;&nbsp;&nbsp;&nbsp;                           
+                            <label for="">CNC<input type="password" class="areatext" pattern="[0-9]*" id="cnc" maxlength="3" required></label>
+                        </div>
+                    <input type="submit" class="m_submitButton" value="SUBMIT">
+                </form>
             </div>
         </div>
-
     </div>
 
      <!---------->

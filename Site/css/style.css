@@ -16,6 +16,8 @@
 .h_theBox {
   width: 100%;
   height: 137px;
+  z-index: 10;
+  position: relative;
 }
 
 .h_line {
@@ -23,6 +25,7 @@
   box-shadow: 0px 0px 30px rgba(234, 224, 224, 0.24);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* Safari 9+ */
+  z-index: 0;
 }
 
 .h_navigation {
@@ -63,11 +66,6 @@ header div ul li .active {
   border-bottom: 3px solid transparent;
   color: #fff6d9;
   padding: 0 20px 28.25px 20px;
-}
-
-.container-nav {
-  width: 1250px;
-  margin: 0 auto;
 }
 
 /* ---------------------------- */
@@ -612,25 +610,102 @@ span h2 {
 /* ----------------- */
 /*    MEMBER FORM    */
 /* ----------------- */
+
 .memberPage {
+  font-family: "Libre Bodoni";
   display: flex;
   flex-direction: row;
   color: #FFF6D9;
+  margin-top: 78px;
+  font-size: 25px;
 
 }
 
 .m_img img {
   height: 735px;
   width: 621px;
-  margin: 78px 130px 120px 0;
+  margin: 0px 130px 120px 0;
   border: 1px solid #9e9c9c;
   border-radius: 15px;
 
 }
 
-form {
+div .memberForm {
+  width: 336px;
+  height: 10px;
+  background: none;
+  
+}
+
+.m_form {
   display:flex;
   flex-direction: column;
+  padding: 250px 150px 118px 150px;
+  margin: auto;
+  overflow: hidden;
+  background: rgba(82, 60, 45, 0.31);
+  position: absolute;
+  top: 0;
+  width: 621px;
+}
+
+.cardNo, .cardNo2{
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+}
+
+#expireMM, #expireYY {
+  width: 100px;
+}
+
+#cnc {
+  width: 70px
+}
+
+.areatext {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+  border:none;
+  border: 1px solid #FFF6D9;
+  background: none;
+  padding: 10px;
+  outline: none;
+  color: #FFF6D9;
+  transition: 0.5s;
+  /* z-index: 0; */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+              rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+              rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+              rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.areatext:focus {
+  box-shadow: 0 0 10px 4px #48453d;
+  background: rgba(255, 246, 217, 0.25);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.m_submitButton {
+  font-family: "Libre Bodoni";
+  float: right;
+  border: 0;
+  background: transparent;
+  color: #FFF6D9;
+  padding: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 25px;
+
+}
+
+.m_submitButton:hover {
+  background: #c7b07b;
+  color: rgb(82, 60, 45);
 }
 
 /* ------------- */
