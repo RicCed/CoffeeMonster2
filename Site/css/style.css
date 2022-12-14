@@ -613,6 +613,14 @@ span h2 {
   color: #c7b07b;
 }
 
+.sign-up{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff6d9;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 /* ----------------- */
 /*    MEMBER FORM    */
 /* ----------------- */
@@ -691,7 +699,7 @@ div .memberForm {
 .areatext:focus {
   box-shadow: 0 0 10px 4px #48453d;
   background: rgba(255, 246, 217, 0.25);
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
 }
 
