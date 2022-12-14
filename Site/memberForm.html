@@ -18,45 +18,46 @@
      <!------->
      <!--NAV-->
      <!------->
-    <header class="h_theBox">
+    <header>
+       <nav class="h_theBox">
         <div class="h_line">
-            <div class="container">
-                <ul class="h_navigation">
-                    <li>
-                    <a class="h_home" href="index.html">Home</a>
-                    </li>
-                    <li>
-                    <a class="h_menu" href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                    <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
-                    </li>
-                    <li>
-                        <a class="h_logo" href="#">LOGO</a>
-                    </li>
-                    <li>
-                        <a class="h_news" href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a class="h_ourStory" href="ourStory.html">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="active" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="container">
+            <ul class="h_navigation">
+              <li>
+                <a class="" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="" href="menu.html">Menu</a>
+              </li>
+              <li class="before-logo">
+                <a class="" href="ourCoffee.html">Our Coffee</a>
+              </li>
+              <li></li>
+                <img src="images/CoffeeMonsterLogo-non-transparent.svg" class="nav-img" alt="">
+              <li class="after-logo">
+                <a class="" href="news.html">News</a>
+              </li>
+              <li>
+                <a class="" href="ourStory.html">Our Story</a>
+              </li>
+              <li>
+                <a class="active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header> 
+      </nav>
+     </header>
      <!--------------->
      <!--MEMBER FORM-->
      <!--------------->
 
     <div class="container">
         <div class="memberPage">
-            <div class="m_img">
+            <figure class="m_img">
                 <img src="../Site/images/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" alt="cupsandplants">
-            </div>
-            <div class="memberForm">
+            </figure>
+            <article class="memberForm">
                 <form class="m_form" action="" method="">
                     <label for="">Full name <span class="error" id="name_error"></span></span><input type="text" class="areatext" id="Name" required></label>
                     
@@ -123,67 +124,69 @@
                     <span class="error" id="expireY2_error"></span>
                     <span class="error" id="cvc2_error"></span>
                 </form>
-            </div>
+            </article>
         </div>
     </div>
 
-    <a class="go-back" href="contact.html">
-        <img src="images/arrow-down.svg" alt="svg pijl naar links" />
-        <p>go back</p>
-      </a>
+    <aside>
+        <a class="go-back back-coffee" href="contact.html">
+            <img src="images/arrow-down.svg" alt="svg pijl naar links" />
+            <p>go back</p>
+        </a>
+    </aside>
 
      <!---------->
      <!--FOOTER-->
      <!---------->
     <footer>
-        <div class="container flex flex-row">
-          <div class="left">
-            <form action="">
-              <h2>Subscribe to our <br />newsletter</h2>
-              <label for="">
-                <p class="p-email">E-mail address</p>
-                <input type="text" name="email" class="left-email" />
-              </label>
-              <input type="submit" value="Submit" class="submit" />
-            </form>
-            <div class="footer-social">
-              <a href="https://www.facebook.com/"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://twitter.com/"
-                ><i class="fa-brands fa-square-twitter"></i
-              ></a>
-              <a href="https://www.instagram.com/"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-            </div>
-          </div>
-          <div class="right">
-            <form action="">
-              <label for="">
-                Name
-                <input type="text" name="footer-name" />
-              </label>
-              <label for="">
-                Email
-                <input type="text" name="footer-email" />
-              </label>
-              <p class="formfield">
-                <label for="">
-                  Message
-                  <textarea
-                    name="footer-message"
-                    id="footer-message"
-                    cols="32.5"
-                    rows="2.5"
-                  ></textarea>
-                </label>
-              </p>
-              <input type="submit" value="Submit" class="submit" />
-            </form>
-          </div>
+    <aside class="container flex flex-row">
+      <section class="left">
+        <form action="">
+          <h2>Subscribe to our <br />newsletter</h2>
+          <label for="">
+            <p class="p-email">E-mail address</p>
+            <input type="text" name="email" class="left-email" />
+          </label>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
         </div>
-      </footer>
-      <script src="js/script.js"></script>
-    </body>
+      </section>
+      <div class="right">
+        <form action="">
+          <label for="">
+            Name
+            <input type="text" name="footer-name" />
+          </label>
+          <label for="">
+            Email
+            <input type="text" name="footer-email" />
+          </label>
+          <p class="formfield">
+            <label for="">
+              Message
+              <textarea
+                name="footer-message"
+                id="footer-message"
+                cols="32.5"
+                rows="2.5"
+              ></textarea>
+            </label>
+          </p>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </aside>
+    </div>
+  </footer>
+<script src="js/script.js"></script>
+</body>
 </html>
