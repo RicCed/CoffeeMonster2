@@ -7,95 +7,98 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	 <header class="h_theBox">
+	 <header>
+       <nav class="h_theBox">
         <div class="h_line">
-            <div class="container">
-                <ul class="h_navigation">
-                    <li>
-                    <a class="h_home" href="index.html">Home</a>
-                    </li>
-                    <li>
-                    <a class="h_menu" href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                    <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
-                    </li>
-                    <li>
-                        <a class="h_logo" href="#">LOGO</a>
-                    </li>
-                    <li>
-                        <a class="h_news" href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a class="active" href="ourStory.html">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header> 
-    <div class="container">
-    	<h1 class="story">Our Story</h1>
-    	<div class="flex flex-row story-section">
-    		<div class="story-img">
-    			<img src="images/koffie-achtergrond.jpg" alt="Picture of coffee with coffeebeans">
-    		</div>
-    		<div class="text-story">
-    			<h2 class="story-subtitle">Coffee Monster</h2>
-    			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, nemo eum voluptatem explicabo quisquam, quidem. Magnam recusandae voluptatem officiis exercitationem quidem sint? Quidem iste dignissimos tempore consequatur deleniti quo id.</p>
-    		</div>
-    	</div>
-    </div> 
-    <footer>
-      <div class="container flex flex-row">
-        <div class="left">
-          <form action="">
-            <h2>Subscribe to our <br />newsletter</h2>
-            <label for="">
-              <p class="p-email">E-mail address</p>
-              <input type="text" name="email" class="left-email" />
-            </label>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://twitter.com/"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
-            <a href="https://www.instagram.com/"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
+          <div class="container">
+            <ul class="h_navigation">
+              <li>
+                <a class="" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="h_menu" href="menu.html">Menu</a>
+              </li>
+              <li>
+                <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
+              </li>
+              <li>
+                <a class="h_logo" href="#">LOGO</a>
+              </li>
+              <li>
+                <a class="h_news" href="news.html">News</a>
+              </li>
+              <li>
+                <a class="active" href="ourStory.html">Our Story</a>
+              </li>
+              <li>
+                <a class="" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="right">
-          <form action="">
-            <label for="">
-              Name
-              <input type="text" name="footer-name" />
-            </label>
-            <label for="">
-              Email
-              <input type="text" name="footer-email" />
-            </label>
-            <p class="formfield">
-              <label for="">
-                Message
-                <textarea
-                  name="footer-message"
-                  id="footer-message"
-                  cols="32.5"
-                  rows="2.5"
-                ></textarea>
-              </label>
-            </p>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
+      </nav>
+     </header>
+    <div class="container">
+    	<h1 class="story">Our Story</h1>
+    	<article class="flex flex-row story-section">
+    		<section class="story-img">
+    			<img src="images/coffee-black-smaller.jpg" alt="Picture of coffee with coffeebeans">
+    		</section>
+    		<section class="text-story">
+    			<h2 class="story-subtitle">Coffee Monster</h2>
+    			<p>In 2016 Coffee Monster was made. Cookie Monster's a well known figure, and we wanted a mascot like that aswell. That's how we became Coffee Monster. For all you people who just can't get enough of it.<br>
+          We are a shop for coffee enthusiasts by coffee enthusiasts.</p>
+    		</section>
+    	</article>
+    </div> 
+    <footer>
+    <aside class="container flex flex-row">
+      <section class="left">
+        <form action="">
+          <h2>Subscribe to our <br />newsletter</h2>
+          <label for="">
+            <p class="p-email">E-mail address</p>
+            <input type="text" name="email" class="left-email" />
+          </label>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
         </div>
-      </div>
-    </footer>
+      </section>
+      <div class="right">
+        <form action="">
+          <label for="">
+            Name
+            <input type="text" name="footer-name" />
+          </label>
+          <label for="">
+            Email
+            <input type="text" name="footer-email" />
+          </label>
+          <p class="formfield">
+            <label for="">
+              Message
+              <textarea
+                name="footer-message"
+                id="footer-message"
+                cols="32.5"
+                rows="2.5"
+              ></textarea>
+            </label>
+          </p>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </aside>
+    </div>
+  </footer>
 </body>
 </html>

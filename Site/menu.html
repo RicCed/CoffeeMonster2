@@ -15,147 +15,149 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="h_theBox">
-        <div class="h_line">
-            <div class="container">
-                <ul class="h_navigation">
-                    <li>
-                    <a class="h_home" href="index.html">Home</a>
-                    </li>
-                    <li>
-                    <a class="active" href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                    <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
-                    </li>
-                    <li>
-                        <a class="h_logo" href="#">LOGO</a>
-                    </li>
-                    <li>
-                        <a class="h_news" href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a class="h_ourStory" href="ourStory.html">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header> 
+    <header>
+      <nav class="h_theBox">
+          <div class="h_line">
+              <div class="container">
+                  <ul class="h_navigation">
+                      <li>
+                      <a class="h_home" href="index.html">Home</a>
+                      </li>
+                      <li>
+                      <a class="active" href="menu.html">Menu</a>
+                      </li>
+                      <li>
+                      <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
+                      </li>
+                      <li>
+                          <a class="h_logo" href="#">LOGO</a>
+                      </li>
+                      <li>
+                          <a class="h_news" href="news.html">News</a>
+                      </li>
+                      <li>
+                          <a class="h_ourStory" href="ourStory.html">Our Story</a>
+                      </li>
+                      <li>
+                          <a class="" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
     <div class="container">
-      <div class="menu-default" id="default">
+      <article class="menu-default" id="default">
         <h1 class="menu">Menu</h1>
-        <div class="flex menu-coffees flex-wrap">
+        <article class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Hot coffees</h2>
-          <div class="menu-coffee">
+          <section class="menu-coffee">
             <img src="images/menu-coffee/hot americano.jpg" alt="Americanos picture" />
             <p>Americanos</p>
-          </div>
-          <div class="menu-coffee" onclick="brewedcoffee()">
+          </section>
+          <section class="menu-coffee" onclick="brewedcoffee()">
             <img
               src="images/menu-coffee/hot brewed.jpg"
               alt="Brewed Coffees picture"
             />
             <p>Brewed <br />Coffees</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/hot capp.jpg" alt="Capuccinos picture" />
             <p>Cappucinos</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/hot esp.jpg" alt="Espresso picture" />
             <p>Espresso</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/hot latte.jpg" alt="Lattes picture" />
             <p>Lattes</p>
-          </div>
-        </div>
-        <div class="flex menu-coffees flex-wrap">
+          </section>
+        </article>
+        <article class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Cold coffees</h2>
-          <div class="menu-coffee">
+          <section class="menu-coffee">
             <img
               src="images/menu-coffee/iced americano.jpg"
               alt="Iced Americanos picture"
             />
             <p>Iced <br />Americano</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/iced latte.jpg" alt="Iced Latte picture" />
             <p>Iced <br />Latte</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img
               src="images/menu-coffee/iced espresso.jpg"
               alt="Iced Espresso picture"
             />
             <p>Iced <br />Espresso</p>
-          </div>
-        </div>
-        <div class="flex menu-coffees flex-wrap">
+          </section>
+        </article>
+        <article class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Frapuccinos</h2>
-          <div class="menu-coffee">
+          <section class="menu-coffee">
             <img
               src="images/menu-coffee/frap-praline.jpg"
               alt="Praline Mocha picture"
             />
             <p>Praline <br />Mocha</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/frap-caramel.jpg" alt="Caramel picture" />
             <p>Caramel</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/menu-coffee/frap-java.jpg" alt="Java Chip picture" />
             <p>Java <br />Chip</p>
-          </div>
-        </div>
-      </div>
-      <div class="menu-brewed-coffee hidden" id="brewed">
-        <div class="flex menu-coffees flex-wrap">
+          </section>
+        </article>
+      </article>
+      <article class="menu-brewed-coffee hidden" id="brewed">
+        <article class="flex menu-coffees flex-wrap">
           <h2 class="menu-subtitle">Brewed Coffees</h2>
-          <div class="menu-coffee">
+          <section class="menu-coffee">
             <img src="images/Coffee beans/blackieshoot-vimMDduzk_k-unsplash.jpg" alt="Decaf" />
             <p>Decaf</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/Coffee beans/ivy-aralia-nizar-BsY8iiW8BTE-unsplash.jpg" alt="Arabia" />
             <p>Arabia</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/Coffee beans/jeff-vanderspank-axO1YrRh2VI-unsplash.jpg" alt="Veranda" />
             <p>Veranda</p>
-          </div>
-          <div class="menu-coffee" id="robusta" onclick="personalize()">
+          </section>
+          <section class="menu-coffee" id="robusta" onclick="personalize()">
             <img src="images/Coffee beans/theo-crazzolara-IkLfUgYaZnk-unsplash.jpg" alt="Robusta" />
             <p>Robusta</p>
-          </div>
-          <div class="menu-coffee">
+          </section>
+          <section class="menu-coffee">
             <img src="images/Coffee beans/tina-guina-obV_LM0KjxY-unsplash.jpg" alt="Monster Coffee" />
             <p class="monster-coffee">
               Monster <br />
               Coffee
             </p>
-          </div>
-        </div>
-      </div>
-      <div class="go-back hidden back-coffee" id="go-back" onclick="goback()">
+          </section>
+        </article>
+      </article>
+      <aside class="go-back hidden back-coffee" id="go-back" onclick="goback()">
         <img src="images/arrow-down.svg" alt="svg pijl naar links" />
         <p>go back</p>
-      </div>
-      <div class="scroll-down hidden" id="scroll-down">
+      </aside>
+      <aside class="scroll-down hidden" id="scroll-down">
         <img src="images/arrow-down.svg" alt="svg pijl naar beneden" />
         <p>scroll down for snacks</p>
-      </div>
-      <div class="flex flex-wrap personalisation hidden" id="personalize">
+      </aside>
+      <article class="flex flex-wrap personalisation hidden" id="personalize">
         <h1 class="personalize">Personalize your coffee</h1>
-        <div class="menu-personalize">
-          <div class="personalize-cup">
+        <section class="menu-personalize">
+          <article class="personalize-cup">
             <img id="cup" src="images/cups/Cups_Medium - None.svg" alt="Big mug" />
             <h3>Robusta</h3>
-            <div>
+            <section>
               <div class="flex mug-size">
                 <p id="small" onclick="size('small')">S</p>
                 <p id="medium" class="size-active" onclick="size('medium')">M</p>
@@ -168,17 +170,17 @@
               >
                 Coffee Monster
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="extras">
+            </section>
+          </article>
+        </section>
+        <section class="extras">
           <h2>Extras:</h2>
           <p id="flavours" onclick="extra('flavours', 'flavour-choice')">Flavours</p>
           <p id="sweeteners" onclick="extra('sweeteners', 'sweetener-choice')">Sweeteners</p>
           <p id="toppings" onclick="extra('toppings', 'topping-choice')">Toppings</p>
           <p id="milk" onclick="extra('milk', 'milk-choice')">Milk</p>
-        </div>
-        <div class="hidden extra-choices" id="menu-choice">
+        </section>
+        <section class="hidden extra-choices" id="menu-choice">
           <div class="hidden" id="flavour-choice">
             <p onclick="flavour('caramel')" id="caramel">Caramel Syrup</p>
             <p onclick="flavour('hazelnut')" id="hazelnut">Hazelnut Syrup</p>
@@ -201,81 +203,81 @@
             <p onclick="flavour('nofat')" id="nofat">No fat</p>
             <p onclick="flavour('monster')" id="monster">Monster fat</p>
           </div>
-        </div>
-        <div class="snacks flex">
+        </section>
+        <article class="snacks flex">
           <h2>Snacks:</h2>
-          <div class="snack-item" onclick="snacks('cookie')">
+          <section class="snack-item" onclick="snacks('cookie')">
             <img src="images/Snack images/cookie-small.jpg" alt="Picture of Chocolate Chip Cookies">
             <p id="cookie">Chocolate <br>Chip Cookie</p>
-          </div>
-          <div class="snack-item" onclick="snacks('waffle')">
+          </section>
+          <section class="snack-item" onclick="snacks('waffle')">
             <img src="images/Snack images/waffle-small.jpg" alt="Waffle with fruit">
             <p id="waffle">Waffle</p>
-          </div>
-          <div class="snack-item" onclick="snacks('cheesecake')">
+          </section>
+          <section class="snack-item" onclick="snacks('cheesecake')">
             <img src="images/Snack images/cheesecake-small.jpg" alt="Cheesecake on plate with fork & fruit">
             <p id="cheesecake">Cheesecake</p>
-          </div>
-          <div class="snack-item" onclick="snacks('almondSnack')">
+          </section>
+          <section class="snack-item" onclick="snacks('almondSnack')">
             <img src="images/Snack images/almond-small.jpg" alt="Almond cake" class="almond">
             <p id="almondSnack">Almond Cake</p>
-          </div>
-          <div class="snack-item" onclick="snacks('monsterSnack')">
+          </section>
+          <section class="snack-item" onclick="snacks('monsterSnack')">
             <img src="images/Snack images/monster-small.jpg" alt="Moeilleux with fruit, called Monster Snack">
             <p id="monsterSnack" class="monster-snack">Monster <br>snack</p>
-          </div>
-        </div>
-      </div>
+          </section>
+        </article>
+      </article>
     </div>
     <footer>
-      <div class="container flex flex-row">
-        <div class="left">
-          <form action="">
-            <h2>Subscribe to our <br />newsletter</h2>
-            <label for="">
-              <p class="p-email">E-mail address</p>
-              <input type="text" name="email" class="left-email" />
-            </label>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://twitter.com/"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
-            <a href="https://www.instagram.com/"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-          </div>
+    <aside class="container flex flex-row">
+      <section class="left">
+        <form action="">
+          <h2>Subscribe to our <br />newsletter</h2>
+          <label for="">
+            <p class="p-email">E-mail address</p>
+            <input type="text" name="email" class="left-email" />
+          </label>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
         </div>
-        <div class="right">
-          <form action="">
+      </section>
+      <div class="right">
+        <form action="">
+          <label for="">
+            Name
+            <input type="text" name="footer-name" />
+          </label>
+          <label for="">
+            Email
+            <input type="text" name="footer-email" />
+          </label>
+          <p class="formfield">
             <label for="">
-              Name
-              <input type="text" name="footer-name" />
+              Message
+              <textarea
+                name="footer-message"
+                id="footer-message"
+                cols="32.5"
+                rows="2.5"
+              ></textarea>
             </label>
-            <label for="">
-              Email
-              <input type="text" name="footer-email" />
-            </label>
-            <p class="formfield">
-              <label for="">
-                Message
-                <textarea
-                  name="footer-message"
-                  id="footer-message"
-                  cols="32.5"
-                  rows="2.5"
-                ></textarea>
-              </label>
-            </p>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
-        </div>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
+          </p>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </aside>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>

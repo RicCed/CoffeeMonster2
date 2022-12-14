@@ -8,116 +8,118 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<header class="h_theBox">
+	<header>
+       <nav class="h_theBox">
         <div class="h_line">
-            <div class="container">
-                <ul class="h_navigation">
-                    <li>
-                    <a class="h_home" href="index.html">Home</a>
-                    </li>
-                    <li>
-                    <a class="h_menu" href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                    <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
-                    </li>
-                    <li>
-                        <a class="h_logo" href="#">LOGO</a>
-                    </li>
-                    <li>
-                        <a class="active" href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a class="h_ourStory" href="ourStory.html">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="container">
+            <ul class="h_navigation">
+              <li>
+                <a class="" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="h_menu" href="menu.html">Menu</a>
+              </li>
+              <li>
+                <a class="h_ourCoffee" href="ourCoffee.html">Our Coffee</a>
+              </li>
+              <li>
+                <a class="h_logo" href="#">LOGO</a>
+              </li>
+              <li>
+                <a class="active" href="news.html">News</a>
+              </li>
+              <li>
+                <a class="h_ourStory" href="ourStory.html">Our Story</a>
+              </li>
+              <li>
+                <a class="" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header> 
+      </nav>
+     </header>
     <div class="container">
 	    <h1 class="news-title">News</h1>
-	    <div class="flex flex-row article">
-	    	<div class="news-first">
+	    <article class="flex flex-row article">
+	    	<aside class="news-first">
 	    		<h2>Tips</h2>
 	    		<div class="flex read-more" onclick="readmore()" id="readmore">
 		    		<p>Read more</p>
 		    		<i class="fa-solid fa-arrow-down"></i>
 	    		</div>
-	    	</div>
-	    	<div class="news-text">
+	    	</aside>
+	    	<section class="news-text">
 	    		<h2>Don't drink coffee on an empty stomach</h3>
 	    		<p id="tekst">To make the most out of your coffee and fully reap the health benefits is to not consume it on an empty stomach.<br>
 	    		This means that unfortunately, it should not replace your breakfast in the morning....<br>
-	    	</div>
-	    	<div class="news-img">
+	    	</section>
+	    	<section class="news-img">
 	    		<img src="images/koffie-achtergrond-smaller.jpg" alt="Coffee with beans on table">
-	    	</div>
-	    </div>
-	    <div class="flex flex-row article">
-	    	<div class="news-first">
+	    	</section>
+	    </article>
+	    <article class="flex flex-row article">
+	    	<aside class="news-first">
 	    		<h2>New</h2>
-	    	</div>
-	    	<div class="news-text">
+	    	</aside>
+	    	<section class="news-text">
 	    		<h2>Check out the new Monster Snack right now!</h3>
 	    		<p id="tekst2">Try out our new <span>Monster Snack</span> right now and enjoy all the different flavours!</p>
-	    	</div>
-	    	<div class="news-img">
+	    	</section>
+	    	<section class="news-img">
 	    		<img src="images/Snack images/monster-smaller.jpg" alt="Moeilleux with fruit on plate">
-	    	</div>
-	    </div>
+	    	</section>
+	    </article>
     </div>
     <footer>
-      <div class="container flex flex-row">
-        <div class="left">
-          <form action="">
-            <h2>Subscribe to our <br />newsletter</h2>
-            <label for="">
-              <p class="p-email">E-mail address</p>
-              <input type="text" name="email" class="left-email" />
-            </label>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://twitter.com/"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
-            <a href="https://www.instagram.com/"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-          </div>
+    <aside class="container flex flex-row">
+      <section class="left">
+        <form action="">
+          <h2>Subscribe to our <br />newsletter</h2>
+          <label for="">
+            <p class="p-email">E-mail address</p>
+            <input type="text" name="email" class="left-email" />
+          </label>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
         </div>
-        <div class="right">
-          <form action="">
+      </section>
+      <div class="right">
+        <form action="">
+          <label for="">
+            Name
+            <input type="text" name="footer-name" />
+          </label>
+          <label for="">
+            Email
+            <input type="text" name="footer-email" />
+          </label>
+          <p class="formfield">
             <label for="">
-              Name
-              <input type="text" name="footer-name" />
+              Message
+              <textarea
+                name="footer-message"
+                id="footer-message"
+                cols="32.5"
+                rows="2.5"
+              ></textarea>
             </label>
-            <label for="">
-              Email
-              <input type="text" name="footer-email" />
-            </label>
-            <p class="formfield">
-              <label for="">
-                Message
-                <textarea
-                  name="footer-message"
-                  id="footer-message"
-                  cols="32.5"
-                  rows="2.5"
-                ></textarea>
-              </label>
-            </p>
-            <input type="submit" value="Submit" class="submit" />
-          </form>
-        </div>
-      </div>
-    </footer>
+          </p>
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </aside>
+    </div>
+  </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
