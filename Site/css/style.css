@@ -49,7 +49,7 @@
   margin-top: 30px;
 }
 
-header div ul li .active {
+nav div ul li .active {
   border-bottom: 1px solid #c7b07b;
 }
 
@@ -101,10 +101,12 @@ header div ul li .active {
 
 .title {
   display: flex;
-  /* justify-content: flex-start; */
-  font-family: "Julius Sans One";
+}
+
+.title h1{
   font-size: 69px;
-  line-height: 93px;
+  font-family: "Julius Sans One";
+  font-weight: 300;
 }
 
 .quote {
