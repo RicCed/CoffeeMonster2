@@ -85,7 +85,7 @@ header div ul li .active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 60vh;
+  height: 85vh;
   width: 844px;
   min-width: 700px;
   color: #fff6d9;
@@ -118,7 +118,7 @@ header div ul li .active {
   font-size: 70px;
   color: #FFF6D9;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
-  margin: 80px 0 80px 40px;
+  margin: 80px 0 80px 0px;
 }
 
 .smallBox {
@@ -130,20 +130,21 @@ header div ul li .active {
 .click-here {
   font-family: "Waiting for the Sunrise";
   color: white;
-  left: 15.5em;
-  bottom: -2em;
+  left: 4em;
+  bottom: 2em;
   font-size: 1em;
   display: inline;
-  position: absolute;
+  position: relative;
   font-size: 1.75em;
 }
 
 .click-here img {
   rotate: 75deg;
-  height: 6em;
-  position: absolute;
-  bottom: -3em;
+  height: 6.5em;
+  position: relative;
+  bottom: -4em;
   left: -5em;
+  rotate: 110deg;
 }
 
 /* ------------- */
