@@ -72,29 +72,35 @@ header div ul li .active {
 /*            HOME              */
 /* ---------------------------- */
 
+
+
+.home { /* home background */
+  background: linear-gradient(0deg, rgba(19, 19, 19, 0.62), rgba(19, 19, 19, 0.62)), url(../images/Coffie-background-home.jpg);
+  background-position: top center;
+  background-size: 100%;
+}
+
 .homePage {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 85vh;
-  width: 50%;
+  justify-content: flex-start;
+  height: 60vh;
+  width: 844px;
   min-width: 700px;
   color: #fff6d9;
   margin-left: 35px;
   font-style: normal;
   font-weight: 400;
-  background-position: right center;
 }
 
 .title_N_quote {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .title {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   font-family: "Julius Sans One";
   font-size: 69px;
   line-height: 93px;
@@ -111,36 +117,20 @@ header div ul li .active {
   font-size: 70px;
   color: #FFF6D9;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+  margin: 80px 0 80px 40px;
 }
 
-.newsBox {
-  background: rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 0px 20px rgba(9, 9, 9, 0.25);
-  white-space: pre;
-  padding-left: 25px;
-  width: 307px;
-}
-
-.newsNews {
-  width: 93px;
-  font-family: "Julius Sans One";
-  font-size: 32px;
-  border-bottom: 3px solid #c7b07b;
-  padding: 1px;
-}
-
-.newsTitle {
-  font-family: "Libre Bodoni";
-  font-size: 30px;
+.smallBox {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  width: 800px;
 }
 
 .click-here {
   font-family: "Waiting for the Sunrise";
   color: white;
-  left: 26em;
-  bottom: 8em;
+  left: 15.5em;
+  bottom: -2em;
   font-size: 1em;
   display: inline;
   position: absolute;
