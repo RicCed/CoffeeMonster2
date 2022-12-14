@@ -42,113 +42,40 @@ function personalize() {
   }
 }
 
-
-function flavourextra() {
-  document.getElementById("flavours").classList.add("drawing");
-  document.getElementById("flavour-choice").classList.remove("hidden");
-  if (document.getElementById("menu-choice").classList.contains("hidden")) {
-    document.getElementById("menu-choice").classList.remove("hidden");
-  }
-  if (document.getElementById("sweeteners").classList.contains("drawing")) {
+function extra(id, id2) {
+  document.getElementById(id).classList.add("drawing");
+  document.getElementById(id2).classList.remove("hidden");
+  document.getElementById("menu-choice").classList.remove("hidden");
+  if(id=="flavours"){
     document.getElementById("sweeteners").classList.remove("drawing");
-  }
-  if (document.getElementById("toppings").classList.contains("drawing")) {
     document.getElementById("toppings").classList.remove("drawing");
-  }
-  if (document.getElementById("milk").classList.contains("drawing")) {
     document.getElementById("milk").classList.remove("drawing");
-  }
-  if (
-    !document.getElementById("sweetener-choice").classList.contains("hidden")
-  ) {
     document.getElementById("sweetener-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("topping-choice").classList.contains("hidden")) {
     document.getElementById("topping-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("milk-choice").classList.contains("hidden")) {
     document.getElementById("milk-choice").classList.add("hidden");
   }
-}
-
-function sweetenerextra() {
-  document.getElementById("sweeteners").classList.add("drawing");
-  document.getElementById("sweetener-choice").classList.remove("hidden");
-  if (document.getElementById("menu-choice").classList.contains("hidden")) {
-    document.getElementById("menu-choice").classList.remove("hidden");
-  }
-  if (document.getElementById("flavours").classList.contains("drawing")) {
+  else if(id=="sweeteners"){
     document.getElementById("flavours").classList.remove("drawing");
-  }
-  if (document.getElementById("toppings").classList.contains("drawing")) {
     document.getElementById("toppings").classList.remove("drawing");
-  }
-  if (document.getElementById("milk").classList.contains("drawing")) {
     document.getElementById("milk").classList.remove("drawing");
-  }
-  if (!document.getElementById("flavour-choice").classList.contains("hidden")) {
     document.getElementById("flavour-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("topping-choice").classList.contains("hidden")) {
     document.getElementById("topping-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("milk-choice").classList.contains("hidden")) {
     document.getElementById("milk-choice").classList.add("hidden");
   }
-}
-
-function toppingextra() {
-  document.getElementById("toppings").classList.add("drawing");
-  document.getElementById("topping-choice").classList.remove("hidden");
-  if (document.getElementById("menu-choice").classList.contains("hidden")) {
-    document.getElementById("menu-choice").classList.remove("hidden");
-  }
-  if (document.getElementById("sweeteners").classList.contains("drawing")) {
-    document.getElementById("sweeteners").classList.remove("drawing");
-  }
-  if (document.getElementById("flavours").classList.contains("drawing")) {
+  else if(id=="toppings"){
     document.getElementById("flavours").classList.remove("drawing");
-  }
-  if (document.getElementById("milk").classList.contains("drawing")) {
+    document.getElementById("sweeteners").classList.remove("drawing");
     document.getElementById("milk").classList.remove("drawing");
-  }
-  if (
-    !document.getElementById("sweetener-choice").classList.contains("hidden")
-  ) {
-    document.getElementById("sweetener-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("flavour-choice").classList.contains("hidden")) {
     document.getElementById("flavour-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("milk-choice").classList.contains("hidden")) {
+    document.getElementById("sweetener-choice").classList.add("hidden");
     document.getElementById("milk-choice").classList.add("hidden");
   }
-}
-
-function milkextra() {
-  document.getElementById("milk").classList.add("drawing");
-  document.getElementById("milk-choice").classList.remove("hidden");
-  if (document.getElementById("menu-choice").classList.contains("hidden")) {
-    document.getElementById("menu-choice").classList.remove("hidden");
-  }
-  if (document.getElementById("sweeteners").classList.contains("drawing")) {
-    document.getElementById("sweeteners").classList.remove("drawing");
-  }
-  if (document.getElementById("toppings").classList.contains("drawing")) {
-    document.getElementById("toppings").classList.remove("drawing");
-  }
-  if (document.getElementById("flavours").classList.contains("drawing")) {
+  else{
     document.getElementById("flavours").classList.remove("drawing");
-  }
-  if (
-    !document.getElementById("sweetener-choice").classList.contains("hidden")
-  ) {
-    document.getElementById("sweetener-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("flavour-choice").classList.contains("hidden")) {
+    document.getElementById("sweeteners").classList.remove("drawing");
+    document.getElementById("toppings").classList.remove("drawing");
     document.getElementById("flavour-choice").classList.add("hidden");
-  }
-  if (!document.getElementById("topping-choice").classList.contains("hidden")) {
+    document.getElementById("sweetener-choice").classList.add("hidden");
     document.getElementById("topping-choice").classList.add("hidden");
   }
 }
@@ -248,6 +175,41 @@ function cup(_number) {
     document.getElementById('cup').src="images/cups/Cups_Monster - 6.svg";
     }
   }
+}
+
+function snacks(id) {
+  document.getElementById(id).classList.add("size-active");
+  if (id == "cookie") {
+    document.getElementById('waffle').classList.remove("size-active");
+    document.getElementById("cheesecake").classList.remove("size-active");
+    document.getElementById("almondSnack").classList.remove("size-active");
+    document.getElementById("monsterSnack").classList.remove("size-active");
+  }
+  else if(id == 'waffle'){
+    document.getElementById('cookie').classList.remove("size-active");
+    document.getElementById("cheesecake").classList.remove("size-active");
+    document.getElementById("almondSnack").classList.remove("size-active");
+    document.getElementById("monsterSnack").classList.remove("size-active");
+  }
+  else if(id == 'cheesecake'){
+    document.getElementById('waffle').classList.remove("size-active");
+    document.getElementById("cookie").classList.remove("size-active");
+    document.getElementById("almondSnack").classList.remove("size-active");
+    document.getElementById("monsterSnack").classList.remove("size-active");
+  }
+  else if(id == 'almondSnack'){
+    document.getElementById('waffle').classList.remove("size-active");
+    document.getElementById("cheesecake").classList.remove("size-active");
+    document.getElementById("cookie").classList.remove("size-active");
+    document.getElementById("monsterSnack").classList.remove("size-active");
+  }
+  else{
+    document.getElementById('waffle').classList.remove("size-active");
+    document.getElementById("cheesecake").classList.remove("size-active");
+    document.getElementById("almondSnack").classList.remove("size-active");
+    document.getElementById("cookie").classList.remove("size-active");
+  }
+  
 }
 
 function size(id) {
