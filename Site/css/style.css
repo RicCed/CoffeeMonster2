@@ -592,6 +592,7 @@ body {
 .picture {
   width: 433px;
   height: 338px;
+  object-fit: cover;
 
 }
 .nameCoffee {
