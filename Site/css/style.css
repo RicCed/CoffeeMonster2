@@ -119,7 +119,7 @@ nav div ul li .active {
   display: flex;
 }
 
-.title h1{
+.title_N_quote h1{
   font-size: 69px;
   font-family: "Julius Sans One";
   font-weight: 300;
@@ -326,7 +326,7 @@ body {
 
 .scroll-down p {
   display: inline;
-  position: fixed;
+  position: absolute;
   bottom: 0.5em;
   right: 4em;
   font-size: 1.75em;
@@ -336,7 +336,7 @@ body {
 .scroll-down img {
   rotate: 5deg;
   height: 10em;
-  position: fixed;
+  position: absolute;
   bottom: -1em;
   right: -1em;
   cursor: pointer;
@@ -925,6 +925,10 @@ footer input:not(.submit) {
   width: 504px;
 }
 
+.left{
+  width: 100%;
+}
+
 .right input:not(.submit) {
   width: 337px;
 }
@@ -954,6 +958,19 @@ footer input:not(.submit) {
 }
 
 .postcode{
+}
+
+#mc_embed_signup{
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.button{
+  padding: 1em 1em 2em 1em;
+}
+
+.email{
+  padding: 1em;
 }
 
 /* ------------- */

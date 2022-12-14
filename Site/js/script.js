@@ -24,13 +24,15 @@ function goback() {
   } else if (
     document.getElementById("menu-choice").classList.contains("hidden") !== true
   ) {
-    document.getElementById("menu-choice").classList.add("hidden");
+    document.getElementById("scroll-down").classList.remove("visible");
   } else if (
     document.getElementById("personalize").classList.contains("hidden") !== true
   ) {
     document.getElementById("personalize").classList.add("hidden");
     document.getElementById("brewed").classList.remove("hidden");
     document.getElementById("brewed").classList.add("visible");
+    document.getElementById("menu-choice").classList.add("hidden");
+    document.getElementById("scroll-down").classList.add("hidden");
   }
 }
 
@@ -39,6 +41,8 @@ function personalize() {
     document.getElementById("personalize").classList.remove("hidden");
     document.getElementById("brewed").classList.remove("visible");
     document.getElementById("brewed").classList.add("hidden");
+    document.getElementById("scroll-down").classList.add("visible");
+    document.getElementById("scroll-down").classList.remove("hidden");
   }
 }
 
@@ -295,7 +299,7 @@ function size(id) {
   }
 }
 
-// CONTACT FORM
+// MEMBER FORM
 
 let nameTxt;
 let emailTxt;
@@ -616,7 +620,6 @@ if (emailTxt.length == 0) {
   }
 
   if(everythingRight){
-    alert('test');
     let link = "mailto:" + encodeURIComponent("cedric.flipkens@gmail.com;")
           + encodeURIComponent(document.getElementById('email').value)
           + "?cc=" + encodeURIComponent("cedric.flipkens2@gmail.com")
