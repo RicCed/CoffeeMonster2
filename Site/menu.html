@@ -141,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="go-back hidden" id="go-back" onclick="goback()">
+      <div class="go-back hidden back-coffee" id="go-back" onclick="goback()">
         <img src="images/arrow-down.svg" alt="svg pijl naar links" />
         <p>go back</p>
       </div>
@@ -173,10 +173,10 @@
         </div>
         <div class="extras">
           <h2>Extras:</h2>
-          <p id="flavours" onclick="flavourextra()">Flavours</p>
-          <p id="sweeteners" onclick="sweetenerextra()">Sweeteners</p>
-          <p id="toppings" onclick="toppingextra()">Toppings</p>
-          <p id="milk" onclick="milkextra()">Milk</p>
+          <p id="flavours" onclick="extra('flavours', 'flavour-choice')">Flavours</p>
+          <p id="sweeteners" onclick="extra('sweeteners', 'sweetener-choice')">Sweeteners</p>
+          <p id="toppings" onclick="extra('toppings', 'topping-choice')">Toppings</p>
+          <p id="milk" onclick="extra('milk', 'milk-choice')">Milk</p>
         </div>
         <div class="hidden extra-choices" id="menu-choice">
           <div class="hidden" id="flavour-choice">
@@ -200,6 +200,29 @@
             <p onclick="flavour('coconut')" id="coconut">Coconut Milk</p>
             <p onclick="flavour('nofat')" id="nofat">No fat</p>
             <p onclick="flavour('monster')" id="monster">Monster fat</p>
+          </div>
+        </div>
+        <div class="snacks flex">
+          <h2>Snacks:</h2>
+          <div class="snack-item" onclick="snacks('cookie')">
+            <img src="images/Snack images/cookie-small.jpg" alt="Picture of Chocolate Chip Cookies">
+            <p id="cookie">Chocolate <br>Chip Cookie</p>
+          </div>
+          <div class="snack-item" onclick="snacks('waffle')">
+            <img src="images/Snack images/waffle-small.jpg" alt="Waffle with fruit">
+            <p id="waffle">Waffle</p>
+          </div>
+          <div class="snack-item" onclick="snacks('cheesecake')">
+            <img src="images/Snack images/cheesecake-small.jpg" alt="Cheesecake on plate with fork & fruit">
+            <p id="cheesecake">Cheesecake</p>
+          </div>
+          <div class="snack-item" onclick="snacks('almondSnack')">
+            <img src="images/Snack images/almond-small.jpg" alt="Almond cake" class="almond">
+            <p id="almondSnack">Almond Cake</p>
+          </div>
+          <div class="snack-item" onclick="snacks('monsterSnack')">
+            <img src="images/Snack images/monster-small.jpg" alt="Moeilleux with fruit, called Monster Snack">
+            <p id="monsterSnack" class="monster-snack">Monster <br>snack</p>
           </div>
         </div>
       </div>

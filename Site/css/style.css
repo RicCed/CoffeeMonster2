@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -283,6 +284,11 @@ body {
   cursor: pointer;
 }
 
+.back-coffee{
+  position: fixed;
+  width: 100%;
+}
+
 .scroll-down {
   font-family: "Waiting for the Sunrise";
   color: white;
@@ -325,6 +331,11 @@ body {
 
 .personalize-cup {
   color: #fff6d9;
+}
+
+.menu-personalize{
+  position: fixed;
+  top: 22.5em;
 }
 
 .mug-size p {
@@ -407,7 +418,9 @@ body {
 }
 
 .extras {
-  margin-left: 119px;
+  margin-left: auto;
+  margin-right: 11.95em;
+  justify-content: flex-end;
 }
 
 .extras p {
@@ -459,6 +472,72 @@ body {
   display: none;
 }
 
+.snack-item {
+  margin-right: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.snack-item img {
+  width: 151px;
+  height: 151px;
+  border-radius: 100%;
+  margin: 30px 50px 10px 50px;
+  display: block;
+  border: 1px solid #9e9c9c;
+  box-shadow: 0px 0px 20px #816246;
+  object-fit: cover;
+}
+
+.snack-item p {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff6d9;
+}
+
+.almond{
+  object-position: center bottom;
+}
+
+.snacks{
+  margin-top: 20em;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 25em;
+  margin-bottom: 10em;
+}
+
+.snacks h2 {
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+
+  color: #fff6d9;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #c7b07b;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  margin-left: 1.75em;
+  margin-right:6.4em;
+}
+
+.snack-item .monster-snack {
+  font-family: "Just Me Again Down Here";
+  font-size: 40px;
+  margin-top: 0.625em;
+}
+
+.snack-item .size-active {
+  color: #c7b07b;
+}
 
 /* ---------------------------- */
 /*        OUR COFFEE            */
@@ -644,12 +723,12 @@ div .memberForm {
 .m_form {
   display:flex;
   flex-direction: column;
-  padding: 250px 150px 118px 150px;
+  padding: 150px 150px 154px 150px;
   margin: auto;
   overflow: hidden;
   background: rgba(82, 60, 45, 0.31);
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -10em;
   width: 621px;
 }
 
@@ -663,7 +742,7 @@ div .memberForm {
   width: 100px;
 }
 
-#cnc {
+#cvc {
   width: 70px
 }
 
@@ -717,6 +796,23 @@ div .memberForm {
   color: rgb(82, 60, 45);
 }
 
+.address{
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+}
+
+.error{
+  font-family: 'Roboto';
+  font-size: 0.75em;
+  color: red;
+}
+
+#streetnr2_error{
+  width: 100%;
+}
+
+
 /* ------------- */
 /*    FOOTER     */
 /* ------------- */
@@ -729,6 +825,8 @@ footer {
   background-color: #040607;
   color: #c7b07b;
   border-top: 1px solid #c7b07b;
+  position: relative;
+  z-index: 11;
 }
 
 footer h2 {
@@ -819,6 +917,9 @@ footer input:not(.submit) {
 .footer-social a {
   text-decoration: none;
   color: #c7b07b;
+}
+
+.postcode{
 }
 
 /* ------------- */
