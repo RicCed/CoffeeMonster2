@@ -119,6 +119,7 @@ header div ul li .active {
   color: #FFF6D9;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
   margin: 80px 0 80px 0px;
+  text-decoration: none;
 }
 
 .smallBox {
@@ -145,6 +146,13 @@ header div ul li .active {
   bottom: -4em;
   left: -5em;
   rotate: 110deg;
+}
+
+.drawing2{
+  background-image: url(../images/drawing-normal.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 70px;
 }
 
 /* ------------- */
