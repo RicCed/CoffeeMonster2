@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -654,12 +655,12 @@ div .memberForm {
 .m_form {
   display:flex;
   flex-direction: column;
-  padding: 250px 150px 118px 150px;
+  padding: 150px 150px 154px 150px;
   margin: auto;
   overflow: hidden;
   background: rgba(82, 60, 45, 0.31);
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -10em;
   width: 621px;
 }
 
@@ -673,7 +674,7 @@ div .memberForm {
   width: 100px;
 }
 
-#cnc {
+#cvc {
   width: 70px
 }
 
@@ -727,6 +728,23 @@ div .memberForm {
   color: rgb(82, 60, 45);
 }
 
+.address{
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+}
+
+.error{
+  font-family: 'Roboto';
+  font-size: 0.75em;
+  color: red;
+}
+
+#streetnr2_error{
+  width: 100%;
+}
+
+
 /* ------------- */
 /*    FOOTER     */
 /* ------------- */
@@ -739,6 +757,8 @@ footer {
   background-color: #040607;
   color: #c7b07b;
   border-top: 1px solid #c7b07b;
+  position: relative;
+  z-index: 11;
 }
 
 footer h2 {
@@ -829,6 +849,9 @@ footer input:not(.submit) {
 .footer-social a {
   text-decoration: none;
   color: #c7b07b;
+}
+
+.postcode{
 }
 
 /* ------------- */
