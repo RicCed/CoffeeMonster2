@@ -58,18 +58,25 @@
             </div>
             <div class="memberForm">
                 <form class="m_form" action="" method="">
-                    <label for="">Name<input type="text" class="areatext" required></label>
-                    <label for="">E-mail<input type="email" class="areatext" required></label>
-                    <label for="">Address<input type="text" class="areatext" required></label>
-                    <label for="">Phone number<input type="text" class="areatext" required></label>
-                    <label for="">Username<input type="text" class="areatext" required></label>
-                    <label for="">Password<input type="password" class="areatext" required></label>&nbsp;&nbsp;
+                    <label for="">Name<input type="text" class="areatext" id="Name" required></label>
+                    <span class="error" id="name_error"></span>
+                    <label for="">E-mail<input type="email" class="areatext" required id="email"></label>
+                    <span class="error" id="email_error"></span>
+                    <label for="">Address<input type="text" class="areatext" required id="address"></label>
+                    <span class="error" id="address_error"></span>
+                    <label for="">Phone number<input type="text" class="areatext" required id="phone"></label>
+                    <span class="error" id="phone_error"></span>
+                    <label for="">Username<input type="text" class="areatext" required id="username"></label>
+                    <span class="error" id="username_error"></span>
+                    <label for="">Password<input type="password" class="areatext" required id="password"></label>&nbsp;&nbsp;
+                    <span class="error" id="password_error"></span>
                     <label for=""></label>Credit Card Number
                         <div class="cardNo">
                             <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard1" id="creditCard1" required/>&nbsp;&nbsp;
                             <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard2" id="creditCard2" required/>&nbsp;&nbsp;
                             <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard3" id="creditCard3" required/>&nbsp;&nbsp;
                             <input class="areatext" type="tel" pattern="[0-9]*" maxlength="4" name="creditCard4" id="creditCard4" required/></label>
+                            <span class="error" id="cardNo_error"></span>
                             <br />
                         </div>
                         <div class="cardNo2">
@@ -89,6 +96,7 @@
                                     <option value='11'>November</option>
                                     <option value='12'>December</option>
                                 </select>
+                                <span class="error" id="expireMM_error"></span>
                                 <select class="areatext" name='expireYY' id='expireYY'>
                                     <option disabled selected value=''>Year</option>
                                     <option value='20'>2020</option>
@@ -96,9 +104,11 @@
                                     <option value='22'>2022</option>
                                     <option value='23'>2023</option>
                                     <option value='24'>2024</option>
-                                </select> 
+                                </select>
+                                <span class="error" id="expireYY_error"></span> 
                                 <input class="areatext" type="hidden" name="expiry" id="expiry" maxlength="4"/> </label>&nbsp;&nbsp;&nbsp;&nbsp;                           
                             <label for="">CNC<input type="password" class="areatext" pattern="[0-9]*" id="cnc" maxlength="3" required></label>
+                            <span class="error" id="cnc_error"></span>
                         </div>
                     <input type="submit" class="m_submitButton" value="SUBMIT">
                 </form>

@@ -699,9 +699,14 @@ div .memberForm {
 .areatext:focus {
   box-shadow: 0 0 10px 4px #48453d;
   background: rgba(255, 246, 217, 0.25);
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
 }
+
+.cardNo2 .areatext:focus{
+  color: #000000;
+}
+
 
 .m_submitButton {
   font-family: "Libre Bodoni";
