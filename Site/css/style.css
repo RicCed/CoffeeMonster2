@@ -1082,12 +1082,3 @@ footer input:not(.submit) {
   margin-top: 9em;
   cursor: pointer;
 }
-
-.news-title{
-  font-family: "Julius Sans One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 85px;
-  line-height: 93px;
-  color: #fff6d9;
-}
